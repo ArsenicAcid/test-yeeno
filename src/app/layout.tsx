@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { roboto } from "./components/variables"
+import type { Metadata } from 'next';
+import './globals.css'
+import { roboto } from './components/variables'
 
 export const metadata: Metadata = {
   title: "Yeeno's Test",
