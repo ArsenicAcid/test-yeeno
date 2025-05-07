@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="flex flex-col items-center">
+    <html lang="en" className="flex flex-col items-center px-10 lg:px-0">
       <body
         className={`${roboto.className} antialiased flex flex-col items-center self-center w-full`}
         style={{maxWidth: "1200px"}}
