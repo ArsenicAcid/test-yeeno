@@ -7,7 +7,7 @@ const AttendeesComponent = async () => {
     const res = await fetch(reqURL)
     const attendees : attendee[] = await res.json()
     return (
-        <div className="flex items-center flex-col md:grid md:lg:grid-cols-3 lg:grid-cols-4 md:justify-items-center">
+        <div className="flex items-center flex-col md:grid md:grid-cols-3 lg:grid-cols-4 md:justify-items-center">
             {attendees.map((attendee : attendee, index : number) => (
             <Card key={index} cardAttendee={attendee}></Card>
           ))}
