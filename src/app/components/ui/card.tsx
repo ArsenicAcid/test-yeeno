@@ -15,7 +15,7 @@ const Card = (props: cardProps) => {
     return (
         <div data-testid="cardContainer" className="flex flex-col bg-white rounded-lg shadow-lg p-2 text-black">
             <div data-testid="cardImageContainer" className ="">
-                <Image src={attendee.profilePictureUrl} alt={attendee.fursonaName} width={100} height={100} className="w-full h-auto" loading='lazy'/>
+                <Image src={attendee.profilePictureUrl} alt={attendee.fursonaName} width={100} height={100} className="w-full h-auto" draggable="false" loading="lazy"/>
             </div>
             <h1>{attendee.fursonaName}</h1>
         </div>
