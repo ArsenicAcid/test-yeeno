@@ -17,7 +17,7 @@ const Card = (props: cardProps) => {
             <div data-testid="cardImageContainer" className ="">
                 <Image src={attendee.profilePictureUrl} alt={attendee.fursonaName} width={100} height={100} className="w-full h-auto" draggable="false" loading="lazy"/>
             </div>
-            <text>{attendee.fursonaName}</text>
+            <span>{attendee.fursonaName}</span>
         </div>
   )
 }
