@@ -13,8 +13,10 @@ const Card = (props: cardProps) => {
 
 
     return (
-        <div className='flex flex-col w-40 h-60'>
-            <Image src={attendee.profilePictureUrl} alt={attendee.fursonaName} width={100} height={100} className='w-full h-auto' loading='lazy'/>
+        <div data-testid="cardContainer" className="flex flex-col bg-white rounded-lg shadow-lg p-2 text-black">
+            <div data-testid="cardImageContainer" className ="">
+                <Image src={attendee.profilePictureUrl} alt={attendee.fursonaName} width={100} height={100} className="w-full h-auto" loading='lazy'/>
+            </div>
             <h1>{attendee.fursonaName}</h1>
         </div>
   )
