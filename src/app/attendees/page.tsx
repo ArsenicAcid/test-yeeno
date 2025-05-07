@@ -1,5 +1,5 @@
 import React from "react"
-import AttendeesComponent from "../components/attendees"
+import AttendeesComponent from "../components/attendees/attendees"
 import { roboto } from "../components/variables"
 
 

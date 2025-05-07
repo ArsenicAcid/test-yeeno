@@ -1,12 +1,13 @@
 import React from 'react'
-import Card from '../components/ui/card'
-import { attendee } from './interfaces/attendee-interface'
+import Card from '../ui/card'
+import { attendee } from '../interfaces/attendee-interface'
 
 const AttendeesComponent = async () => {
-    const res = await fetch("http://lesgoski.ddns.net:10621/api/pun25/attendees/flat-list")
+    const reqURL = "http://lesgoski.ddns.net:10621/api/pun25/attendees/flat-list"
+    const res = await fetch(reqURL)
     const attendees : attendee[] = await res.json()
     return (
-        <div className='w-full grid grid-cols-4 justify-items-center'>
+        <div className="flex items-center flex-col md:grid md:lg:grid-cols-3 lg:grid-cols-4 md:justify-items-center">
             {attendees.map((attendee : attendee, index : number) => (
             <Card key={index} cardAttendee={attendee}></Card>
           ))}
