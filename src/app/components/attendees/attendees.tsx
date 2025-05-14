@@ -32,7 +32,7 @@ const AttendeesComponent = (props: any) => {
 
     return (
         <div className="flex flex-col items-center w-full">
-            <div className="w-full flex gap-2 h-12 mt-4">
+            <div className="w-full flex flex-col md:flex-row gap-2 md:h-12 my-4">
                 <form>
                     <input  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3" 
                             type="search" 
@@ -42,6 +42,7 @@ const AttendeesComponent = (props: any) => {
                             onChange={(e) => setSearch(e.target.value)}
                         />
                 </form>
+                <div className="flex gap-2">
                     <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-3" value={kindFilter} onChange={handleKindFilterChange}>
                         <option value="all">All Kinds</option>
                         <option value="staff">Staff</option>
@@ -58,10 +59,11 @@ const AttendeesComponent = (props: any) => {
                         <option value="false">Non-fursuiters</option>
                     </select>
                     <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-3" value={ticketKindFilter} onChange={handleTicketKindFilterChange}>
-                        <option value="all">All Ticket Kinds</option>
+                        <option value="all">All Tickets</option>
                         <option value="base">Base</option>
                         <option value="early">Early</option>
                     </select>
+                </div>
             </div>
             <div className="flex items-center flex-col md:grid md:grid-cols-3 lg:grid-cols-4 md:justify-items-center gap-4 w-full">
                 {filteredAttendees.map((attendee: attendee, index: number) => (
