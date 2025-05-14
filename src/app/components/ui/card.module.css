@@ -1,0 +1,10 @@
+.checkedIn {
+    border: 4px solid green;
+    border-radius: 10px;
+}
+
+
+.notCheckedIn {
+    border: 4px solid red;
+    border-radius: 10px;
+}

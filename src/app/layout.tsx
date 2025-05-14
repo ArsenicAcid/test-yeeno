@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css'
-import { roboto } from './components/variables'
+import { roboto, pageWidth } from './components/variables'
 
 export const metadata: Metadata = {
   title: "Yeeno's Test",
@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en" className="flex flex-col items-center px-10 lg:px-0">
       <body
         className={`${roboto.className} antialiased flex flex-col items-center self-center w-full`}
-        style={{maxWidth: "1200px"}}
+        style={{maxWidth: pageWidth}}
       >
         {children}
       </body>
