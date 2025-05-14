@@ -7,4 +7,4 @@ npm run dev
 
 Open [http://localhost:3000/attendees](http://localhost:3000/attendees) with your browser to see the result.
 
-- This app was made using NextJS & Tailwind. Learn more about [Next.js](https://nextjs.org/) and [Tailwind]([https://nextjs.org/](https://tailwindcss.com).
+- This app was made using NextJS & Tailwind. Learn more about [Next.js](https://nextjs.org/) and [Tailwind](https://tailwindcss.com).
