@@ -16,7 +16,7 @@ const Card = (props: cardProps) => {
 
 
     return (
-        <div className="w-full flex md:flex-col bg-white rounded-lg shadow-lg p-2 text-black gap-2">
+        <div className="w-full flex md:flex-col bg-white rounded-xl shadow-lg p-2 text-black gap-2">
             <div className={attendee.checkInCompleted? card.checkedIn : card.notCheckedIn}>
                 <Image  src={attendee.profilePictureUrl} 
                         alt={attendee.fursonaName} 
@@ -27,7 +27,7 @@ const Card = (props: cardProps) => {
             </div>
             <div className="w-full flex flex-col justify-between">
                 <p>{attendee.fursonaName}</p>
-                <div className="self-end italic text-right">
+                <div className="w-full self-end italic text-right md:flex md:justify-between">
                     <p>{attendee.isFursuiter? "(Fursuiter)" : ""}</p>
                     <p>{attendee.kind?.charAt(0).toUpperCase() + attendee.kind?.slice(1)}</p>
                 </div> 
