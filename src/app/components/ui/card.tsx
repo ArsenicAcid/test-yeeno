@@ -27,7 +27,7 @@ const Card = (props: cardProps) => {
                         loading="lazy"/>
             </div>
             <div className="w-full flex flex-col justify-between">
-                <p>{attendee.fursonaName}</p>
+                <p className="font-bold">{attendee.fursonaName}</p>
                 <div className="w-full self-end italic text-right md:flex md:justify-between">
                     <p>{attendee.isFursuiter? "(Fursuiter)" : ""}</p>
                     <p>{attendee.kind?.charAt(0).toUpperCase() + attendee.kind?.slice(1)}</p>
