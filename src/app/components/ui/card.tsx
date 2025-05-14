@@ -21,8 +21,8 @@ const Card = (props: cardProps) => {
             <div className={attendee.checkInCompleted? card.checkedIn : card.notCheckedIn}>
                 <Image  src={attendee.profilePictureUrl} 
                         alt={attendee.fursonaName} 
-                        width={400} height={400} 
-                        className="w-full h-auto" 
+                        width={300} height={300} 
+                        className="w-50 md:w-full h-auto" 
                         draggable="false" 
                         loading="lazy"/>
             </div>
