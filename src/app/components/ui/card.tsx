@@ -13,7 +13,8 @@ const Card = (props: cardProps) => {
 
     if (!attendee.profilePictureUrl 
         || !attendee.fursonaName
-        || !attendee.kind) return
+        || !attendee.kind
+        || !attendee.checkInCompleted) return
 
 
     return (
