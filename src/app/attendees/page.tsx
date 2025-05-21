@@ -22,7 +22,7 @@ const getAttendees = async () => {
       const data = await fetch(reqURL)
       return { success: data}
   } catch (error) {
-      return { error: "Failed to fetch attendees"}
+      return { error: "Failed to fetch attendees. Error: " + error}
   }
 }
   

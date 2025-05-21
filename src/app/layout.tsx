@@ -1,3 +1,4 @@
+import React from 'react'
 import type { Metadata } from 'next';
 import './globals.css'
 import { roboto, pageWidth } from './components/variables'
@@ -5,7 +6,7 @@ import { roboto, pageWidth } from './components/variables'
 export const metadata: Metadata = {
   title: "Yeeno's Test",
   description: "Pages created by Yeeno",
-};
+}
 
 export default function RootLayout({
   children,

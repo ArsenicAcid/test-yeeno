@@ -3,7 +3,11 @@ import React from 'react'
 import Card from '../ui/card'
 import { attendee } from '../interfaces/attendee-interface'
 
-const AttendeesComponent = (props: any) => {
+type props = {
+    attendees: attendee[]
+}
+
+const AttendeesComponent = (props: props) => {
     const [search, setSearch] = React.useState('')
     const [kindFilter, setKindFilter] = React.useState('all')
     const [isFursuiterFilter, setIsFursuiterFilter] = React.useState('all')
