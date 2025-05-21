@@ -31,7 +31,7 @@ const AttendeesComponent = (props: any) => {
     })
 
     return (
-        <div className="flex flex-col items-center w-full">
+        <div className="flex flex-col items-center w-full py-4">
             <div className="w-full flex flex-col md:flex-row gap-2 md:h-12 my-4">
                 <form>
                     <input  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3" 
