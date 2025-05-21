@@ -11,15 +11,15 @@ type cardProps = {
 const Card = (props: cardProps) => {
     const attendee = props.cardAttendee
 
-    if (!attendee.profilePictureUrl 
-        || !attendee.fursonaName
-        || !attendee.kind
-        || !attendee.checkInCompleted) return
+    if (    !attendee.profilePictureUrl 
+        ||  !attendee.fursonaName
+        ||  !attendee.kind
+    ) return
 
 
     return (
         <div className="w-full flex md:flex-col bg-white rounded-xl shadow-lg p-2 text-black gap-2">
-            <div className={attendee.checkInCompleted? card.checkedIn : card.notCheckedIn}>
+            <div className={attendee.checkInCompleted ? card.checkedIn : card.notCheckedIn}>
                 <Image  src={attendee.profilePictureUrl} 
                         alt={attendee.fursonaName} 
                         width={300} height={300} 
